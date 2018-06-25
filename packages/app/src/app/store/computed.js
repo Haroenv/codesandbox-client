@@ -1,3 +1,3 @@
 export function isContributor(username: string) {
-  return this.contributors.indexOf(username) > -1;
+  return this.contributors.indexOf(username.toLocaleLowerCase()) > -1;
 }
